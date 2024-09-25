@@ -30,7 +30,7 @@ userSchema.post("save", async function (doc) {
 
     //send mail
     let mailThem = await transporter.sendMail({
-      from: '"Himanshu Relhan" <himanshurelhan70@gmail.com>',
+      from: '"Vivek Mishra" <vivekmishra9343@gmail.com>',
       to: doc.email,
       subject: "Thanks for visiting my portfolio website",
       html: `<!DOCTYPE html>
@@ -92,8 +92,8 @@ userSchema.post("save", async function (doc) {
     console.log("INFO of mail sent to user", mailThem);
 
     let mailMe = await transporter.sendMail({
-      from: '"Himanshu Relhan" <himanshurelhan70@gmail.com>',
-      to: "himanshurelhan70@gmail.com",
+      from: '"Vivek Mishra Portfolio" <vivekmishra9343@gmail.com>',
+      to: "vivekmishra9343@gmail.com",
       subject: "A user filled the contact form",
       html: `
             <html>
